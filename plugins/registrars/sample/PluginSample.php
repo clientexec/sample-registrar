@@ -2,7 +2,7 @@
 
 require_once 'modules/admin/models/RegistrarPlugin.php';
 
-class PluginEnom extends RegistrarPlugin
+class PluginSample extends RegistrarPlugin
 {
     public $features = [
         'nameSuggest' => true,

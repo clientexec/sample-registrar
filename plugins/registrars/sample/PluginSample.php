@@ -357,6 +357,8 @@ class PluginSample extends RegistrarPlugin
 
     public function getGeneralInfo($params)
     {
+        // if a connection error occurs, throw the proper exception and error code:
+        // throw new CE_Exception('Failed to communicate with registrar.', EXCEPTION_CODE_CONNECTION_ISSUE);
         $data = [];
 
         $data['id'] = $domainId;

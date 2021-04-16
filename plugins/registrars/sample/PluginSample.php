@@ -146,7 +146,7 @@ class PluginSample extends RegistrarPlugin
         // if transfer has completed:
         $userPackage->setCustomField('Transfer Status', 'Completed');
 
-        // return status string from registrar to shjow in UI
+        // return status string from registrar to show in UI
         return $status;
     }
 
@@ -177,7 +177,7 @@ class PluginSample extends RegistrarPlugin
     public function getContactInformation($params)
     {
         $info = [];
-        // only Registrant is supported in UI, but we return all for a future releases
+        // only Registrant is supported in UI, but we return all for future releases
         foreach (array('Registrant', 'AuxBilling', 'Admin', 'Tech') as $type) {
             if (is_array($data)) {
                 $info[$type]['OrganizationName'] = [
@@ -341,8 +341,6 @@ class PluginSample extends RegistrarPlugin
         // get name servers at registar
         $info[] = 'ns1.sample.com';
         $info[] = 'ns2.sample.com';
-
-        return $info;
 
         return $info;
     }
